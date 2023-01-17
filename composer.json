@@ -2,6 +2,7 @@
     "name": "2amigos/yii2-chartjs-widget",
     "description": "ChartJs widget for Yii2.",
     "type": "yii2-extension",
+    "version": "4.0.0",
     "keywords": [
         "2amigos",
         "yii",
@@ -30,7 +31,7 @@
     "require": {
         "php": ">=7.3",
         "yiisoft/yii2": "^2.0",
-        "nnnick/chartjs": "^2.9"
+        "nnnick/chartjs": "4.*"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
@@ -53,5 +54,10 @@
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ]
+    ],
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    }
 }
